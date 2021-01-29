@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+      body {
+        width: 200px;
+      }
+      .box{
+        border: solid 1px #ccc;
+        padding: 10px;
+        word-wrap: break-word;
+      }
+      .box+.box{
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="textView" class="box"></div>
+    <div id="textUrl" class="box"></div>
+    <input id="input" type="text" value="送信する文字">
+    <button id="submit">送信</button>
+    <script src="popup.js"></script>
+  </body>
+</html>

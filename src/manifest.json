@@ -1,0 +1,17 @@
+{
+  "name": "拡張機能のタイトル",
+  "description": "拡張機能の説明文",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["jquery-3.5.1.min.js","content_script.js"]
+  }],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "",
+    "default_popup": "popup.html"
+  }
+}
